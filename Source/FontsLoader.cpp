@@ -11,6 +11,8 @@
 #include "stb_truetype.h"
 #endif
 
+#include <memory.h>
+
 //Bitmap simple struct
 struct loaded_bitmap
 {
