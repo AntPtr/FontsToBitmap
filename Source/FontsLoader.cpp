@@ -162,7 +162,6 @@ internal loaded_bitmap LoadGlyphBitmap(char *FileName, uint32 CodePoint, char *F
     Result.Width = Width;
     Result.Height = Height;
     Result.Memory = malloc(Result.Height * Result.Pitch);
-    Result.Free = Result.Memory;
 
     uint8 *DestRow = (uint8*)Result.Memory + (Result.Height - 1) * Result.Pitch;
     uint32 *SourceRow = (uint32*)Bits + MaxWidth * (MaxHeight - 1 - MinY);
